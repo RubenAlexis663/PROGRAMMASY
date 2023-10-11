@@ -1,0 +1,58 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el banner superior */
+.banner {
+    background-color: #262559;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+.banner h1 {
+    font-size: 1.5rem; /* Tamaño mediano del título */
+    margin: 0;
+}
+
+.btn {
+    background-color: white;
+    color: #262559;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+/* Estilos para el panel lateral izquierdo */
+.sidebar {
+    background-color: #2F2ABF;
+    color: white;
+    width: 200px;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    padding: 20px;
+    position: fixed;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    /* Puedes agregar estilos adicionales para la imagen circular */
+}
+
+/* Estilos para el contenido principal */
+.content {
+    margin-left: 220px; /* Ancho del panel lateral más un margen adicional */
+    padding: 20px;
+}
