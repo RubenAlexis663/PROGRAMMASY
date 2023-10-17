@@ -1,0 +1,33 @@
+/* Estilos generales */
+body {
+    background-color: black;
+    font-family: 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+}
+
+/* Estilos para la interfaz de inicio de sesión */
+.login-box {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #E8E8E8;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Estilos para los botones */
+.btn {
+    background-color: #577EF2;
+    color: white;
+    margin-right: 10px;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+}
+
