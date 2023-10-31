@@ -1,0 +1,65 @@
+/* Estilos generales */
+body {
+    
+    background-image: url(../images/FondoHA.jpg);
+    background-size:cover; 
+    background-position:center ; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilos para el banner superior */
+.banner {
+    background-color: #149fc2;
+    color: white;
+    text-align: center;
+    padding: 22px 0;
+    position: relative;
+}
+
+.banner h1 {
+    font-size: 1.5rem; /* Tamaño mediano del título */
+    margin: 0;
+}
+
+.btn {
+    
+    border:10cm;
+    margin: 0 5px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    position: relative;
+    float: right;
+    right: 10px;
+    transform: translateY(-50%);
+    text-align:justify;
+}
+
+/* Estilos para el panel lateral izquierdo */
+.sidebar {
+    background-color: #149fc2;
+    color: white;
+    width: 300px;
+    height: 80vh; /* Ocupa toda la altura de la ventana */
+    padding: 30px;
+    position: fixed;
+    border-radius: 15px;
+    margin-top: 1%;
+    
+    
+}
+
+
+
+/* Estilos para el contenido principal */
+.content {
+    width: 50%; /* Ancho del contenedor */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    padding: 0px;
+    background-color: transparent; /* Gris opaco (ajusta la opacidad según necesites) */
+    border-radius: 10px; /* Bordes curvos */
+    text-align: center; /* Centrar el contenido dentro del contenedor */
+    
+}
+
+

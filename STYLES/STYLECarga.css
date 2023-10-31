@@ -1,0 +1,9 @@
+body {
+    
+    background-image: url(../images/carga.gif);
+    background-size:100%; 
+    background-position:center ; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}

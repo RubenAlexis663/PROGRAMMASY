@@ -1,0 +1,50 @@
+<?php
+session_start();
+include 'ConexionBD.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $UsserName = $_POST["UsserName"];
+    $Contrasena = $_POST["Contrasena"];
+
+    $query = "SELECT * FROM usuarios WHERE UsserName = '$UsserName'";
+    $result = $conexion->query($query);
+
+    if ($result->num_rows == 1) {
+        $row = $result->fetch_assoc();
+        $hashedPassword = $row["Contrasena"];
+
+        // Verificar si la contraseña ingresada coincide con la contraseña almacenada en la base de datos
+        if (password_verify($Contrasena, $hashedPassword)){
+            $_SESSION["UsserName"] = $UsserName;
+            $_SESSION["user_role"] = $row["UsserRol"]; // Almacena el rol en la sesión
+            header("Location: ../HOME.php?UsserName=$UsserName");
+        }
+        if ($row["UsserRol"] == 'Administra') {
+            header("Location: ../cargaA.php"); // Redirige a la página de administrador
+        } else if ($row["UsserRol"] == 'usuario'){
+            header("Location: ../cargaH.php"); // Redirige a la página de usuario común
+        }
+    } else {
+        echo "Credenciales incorrectas. Inténtalo de nuevo.";
+        header("Location: ../LOGIN.php");
+    }
+}
+
+$conexion->close();
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

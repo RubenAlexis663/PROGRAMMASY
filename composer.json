@@ -1,0 +1,23 @@
+
+
+{
+    "name": "ruben_duran/prog",
+    "description": "proyecto_programmasy",
+    "type": "proyecto",
+    "license": "MTI",
+    "autoload": {
+        "psr-4": {
+            "RubenDuran\\Prog\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ruben duran"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+         "slim/slim" : "4.0.0"
+    }
+
+}
