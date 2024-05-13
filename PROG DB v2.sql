@@ -184,6 +184,26 @@ INSERT INTO `usuarios` (`UsserID`, `UsserName`, `Email`, `Contrasena`, `UsserRol
 (15, 'carlos', 'carlos12345@gmail.com', '$2y$10$8.vDbiD8aE5q4QdoNyA8puDNcxCuZUT3qXStOBe4AJC', 'usuario', NULL, NULL, NULL),
 (16, 'JULIO', 'juliocesarpalace@gmail.com', '$2y$10$yb9DulqbOajaXD2zzgDxw.d2MXZ.flYa9UKLo.zt/W3', 'usuario', NULL, NULL, NULL);
 
+-- select * from proovedores;
+insert into proovedores values(1,'Python','Python Software Foundation License','Python, un leguaje versatil y libre'),
+(2,'Java','Oracle Corporation','Java, un lenguaje universal en el desarrollo.'),
+(3,'Java Scipt','ECMA','Java Script, apto para aquellos que les interesa Front y Back.'),
+(4,'HTML','W3C','HTML, la base de todo lo que vemos.'),
+(5,'CSS','W3C','CSS, la belleza que vemos en nuestras pantallas.'); 
+
+-- select * from categorias;
+insert into categorias values(1,'Python', 1),
+(2,'Java', 2),
+(3,'Java Scipt', 3),
+(4,'HTML', 4),
+(5,'CSS', 5);
+
+-- select * from niveles;
+insert into niveles values(1,'Principiante'),(2,'Junior'),(3,'Intermedio'),(4,'Avanzado'),(5,'Developer');
+
+-- select * from cursos;
+insert into cursos values(1,'Python', 'Introducciones y logica',1,1);
+
 -- --------------------------------------------------------
 
 --
