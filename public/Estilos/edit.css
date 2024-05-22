@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left, #008ab4, #5a1592); 
+    background-size: cover; /* Cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    height: 100vh; /* Toma el 100% de la altura de la ventana del navegador */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+
+.wrapper {
+    width: 800px;
+    height: 700px;
+    background-image: url('../Recursos/actua.gif');
+    background-size: cover; /* Cubre todo el fondo */
+    background-position: center;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(82, 82, 82, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 50px rgba(0,0,0, .2);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border-color: white;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+.login-box {
+    background-color:black; /* Color de fondo gris */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px; /* Ancho máximo del cuadro */
+    width: 100%;
+}
+
+
+
+.remenber-forgot label {
+    margin-bottom: 10px; /* Espacio entre label y a */
+    margin: -15px 0 15px;
+}
+
+.remenber-forgot a {
+    margin-top: 10px; /* Espacio entre a y el siguiente elemento */
+    margin: -15px 0 15px;
+}
+
+button {
+    background-color:green;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: center;
+
+}
+
+.elim{
+    background-color:red;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: center;
+
+}
+
+
+
+.register-link {
+    margin-top: 10px;
+}
+
+.content {
+    background-color: transparent;
+    background-color: rgba(82, 82, 82, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 30px;
+    max-width: 700px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.content h3{
+    margin-right: 30%;
+}
+
+/* Estilos adicionales para los elementos dentro del cuadro */
+input, label, a, button {
+    margin-top: 10px; /* Espacio entre los elementos */
+}
+
+.label{
+    font-size: 18px; /* Tamaño de la fuente más grande */
+    color: #ffffff; /* Color más suave */
+}
+
+.input-box input{
+    font-size: 15px; /* Tamaño de la fuente más grande */
+    color: black;
+    background-color:white;
+    border-radius: 5px;
+    border-color: white;
+}
+
+.volver{
+    background-color: black;
+    margin-bottom: 500%;
+   
+    margin-left: -100%;
+    border-color: white;
+}
+
+.but{
+    background-color: black;
+    border-radius: 30px;
+    border-color: white;
+}
+
